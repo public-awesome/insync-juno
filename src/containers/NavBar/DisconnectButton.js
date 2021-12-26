@@ -13,12 +13,13 @@ const DisconnectButton = (props) => {
     };
 
     return (
-        <Button
+        <button
             className="disconnect_button"
             variant="contained"
-            onClick={handleClick}>
+            onClick={handleClick}
+        >
             {variables[props.lang].disconnect}
-        </Button>
+        </button>
     );
 };
 
@@ -40,4 +41,6 @@ const actionsToProps = {
     disconnectSet,
 };
 
-export default withRouter(connect(stateToProps, actionsToProps)(DisconnectButton));
+export default withRouter(
+    connect(stateToProps, actionsToProps)(DisconnectButton)
+);
