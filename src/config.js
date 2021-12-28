@@ -4,7 +4,7 @@ export const config = {
     EXPLORER_URL: 'https://www.mintscan.io/stargaze',
     NETWORK_NAME: 'Stargaze-DEVNET',
     NETWORK_TYPE: 'testnet',
-    CHAIN_ID: 'devnet-1',
+    CHAIN_ID: 'stargaze-devnet-1',
     CHAIN_NAME: 'Stargaze-DEVNET',
     COIN_DENOM: 'STARS',
     COIN_MINIMAL_DENOM: 'ustars',
