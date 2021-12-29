@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button } from '@material-ui/core';
 import * as PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import variables from '../../utils/variables';

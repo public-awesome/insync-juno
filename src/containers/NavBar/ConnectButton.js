@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Button } from '@material-ui/core';
 import * as PropTypes from 'prop-types';
 import variables from '../../utils/variables';
 import { initializeChain } from '../../helper';
