@@ -177,9 +177,9 @@ class Table extends Component {
             this.props.active === 2
                 ? this.props.delegatedValidatorList
                 : this.props.validatorList;
-        if (this.props.home && dataToMap.length > 6) {
-            dataToMap = dataToMap.slice(0, 6);
-        }
+        dataToMap = dataToMap.map(a => [Math.random(), a])
+            .sort((a, b) => a[0] - b[0])
+            .map(a => a[1]);
         const tableData =
             dataToMap && dataToMap.length
                 ? dataToMap.map((item) => [
