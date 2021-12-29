@@ -13,8 +13,8 @@ export const config = {
     COIN_TYPE: 118,
     COINGECKO_ID: 'stargaze',
     DEFAULT_GAS: 250000,
-    GAS_PRICE_STEP_LOW: 0.005,
-    GAS_PRICE_STEP_AVERAGE: 0.025,
-    GAS_PRICE_STEP_HIGH: 0.08,
+    GAS_PRICE_STEP_LOW: 0.0,
+    GAS_PRICE_STEP_AVERAGE: 0.0,
+    GAS_PRICE_STEP_HIGH: 0.025,
     FEATURES: ['stargate', 'ibc-transfer'],
 };
