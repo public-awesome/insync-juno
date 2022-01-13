@@ -1,5 +1,5 @@
 export const config = {
-    RPC_URL: 'https://rpc.stargaze.publicawesome.dev',
+    RPC_URL: 'https://rpc.stargaze-apis.com',
     REST_URL: 'https://rest.stargaze-apis.com',
     EXPLORER_URL: 'https://www.mintscan.io/stargaze',
     NETWORK_NAME: 'Stargaze',
