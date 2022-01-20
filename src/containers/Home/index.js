@@ -117,13 +117,29 @@ class Home extends Component {
                                     }
                                 </p>
                             </div>
-                            <Button
-                                className="view_all"
-                                onClick={() => this.handleRedirect('/stake')}
-                            >
-                                {variables[this.props.lang]['view_all']}
-                            </Button>
+                            <div className="flex flex-row items-center space-x-4">
+                                <p className="hidden text-sm font-medium md:block">
+                                    {
+                                        variables[this.props.lang][
+                                            'unbonding_period'
+                                        ]
+                                    }{' '}
+                                    14 {variables[this.props.lang].days}
+                                </p>
+                                <Button
+                                    className="view_all"
+                                    onClick={() =>
+                                        this.handleRedirect('/stake')
+                                    }
+                                >
+                                    {variables[this.props.lang]['view_all']}
+                                </Button>
+                            </div>
                         </div>
+                        <p className="block mt-4 text-lg font-medium md:hidden">
+                            {variables[this.props.lang]['unbonding_period']} 14{' '}
+                            {variables[this.props.lang].days}
+                        </p>
                         <Table active={active} home={true} />
                     </div>
                 </div>

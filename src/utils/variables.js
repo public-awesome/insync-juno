@@ -2,6 +2,8 @@ import { config } from '../config';
 
 const variables = {
     en: {
+        unbonding_period: 'Unbonding period:',
+        days: 'days',
         connect_web3: `Connect to your ${config.NETWORK_NAME} ${config.NETWORK_TYPE} account`,
         web3_note:
             'web3 power user? Your on-chain data will give you exclusive access',
@@ -57,7 +59,8 @@ const variables = {
         no_data_found: 'No data found',
         success: 'Success',
         transaction_failed: 'Transaction Failed',
-        transaction_processing: 'Transaction is in process. use high gas for quick transaction',
+        transaction_processing:
+            'Transaction is in process. use high gas for quick transaction',
         claimed_success: 'CLAIMED TOKENS Successfully',
         vote_success: 'Vote Submitted Successfully',
         transaction_hash: 'Transaction Hash',
