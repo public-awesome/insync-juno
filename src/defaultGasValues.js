@@ -1,8 +1,8 @@
 export const gas = {
-    send: 250000,
-    vote: 250000,
-    delegate: 250000,
-    un_delegate: 250000,
+    send: 300000,
+    vote: 300000,
+    delegate: 300000,
+    un_delegate: 300000,
     re_delegate: 400000,
     claim_reward: 350000,
 };
