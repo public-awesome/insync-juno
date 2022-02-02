@@ -23,25 +23,34 @@ const Stake = (props) => {
 
     return (
         <div className="stake">
-            <NavBar stake={true}/>
+            <NavBar stake={true} />
             <div className="stake_content padding">
                 <div className="heading">
                     <div className="tabs">
-                        <p className={active === 1 ? 'active' : ''} onClick={() => handleChange(1)}>
+                        <p
+                            className={active === 1 ? 'active' : ''}
+                            onClick={() => handleChange(1)}
+                        >
                             {variables[props.lang]['all_validators']}
                         </p>
-                        <span/>
-                        <p className={active === 2 ? 'active' : ''} onClick={() => handleChange(2)}>
+                        <span />
+                        <p
+                            className={active === 2 ? 'active' : ''}
+                            onClick={() => handleChange(2)}
+                        >
                             {variables[props.lang]['staked_validators']}
                         </p>
                     </div>
+                    <p className="font-medium text-white">
+                        Unbonding period: 14 days
+                    </p>
                 </div>
-                <Table active={active}/>
+                <Table active={active} />
             </div>
-            <DelegateDialog/>
-            <SuccessDialog/>
-            <UnSuccessDialog/>
-            <PendingDialog/>
+            <DelegateDialog />
+            <SuccessDialog />
+            <UnSuccessDialog />
+            <PendingDialog />
         </div>
     );
 };
