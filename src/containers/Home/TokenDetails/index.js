@@ -107,6 +107,7 @@ const TokenDetails = (props) => {
                         <p>{unStaked / 10 ** config.COIN_DECIMALS}</p>
                     )}
                 </div>
+                <p className="text-xs font-medium">Unbonding period: 14 days</p>
             </div>
         </div>
     );
