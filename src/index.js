@@ -15,6 +15,7 @@ if (window.keplr){
     window.keplr.defaultOptions = {
         sign: {
             preferNoSetFee: true,
+            disableBalanceCheck: true,
         },
     };
 }
