@@ -80,18 +80,18 @@ class Table extends Component {
                             )}
                             title={
                                 value.status === 1
-                                    ? 'unbonding'
-                                    : value.status === 2
                                     ? 'unbonded'
+                                    : value.status === 2
+                                    ? 'unbonding'
                                     : value.status === 3
                                     ? 'active'
                                     : ''
                             }
                         >
                             {value.status === 1
-                                ? 'unbonding'
-                                : value.status === 2
                                 ? 'unbonded'
+                                : value.status === 2
+                                ? 'unbonding'
                                 : value.status === 3
                                 ? 'active'
                                 : ''}
